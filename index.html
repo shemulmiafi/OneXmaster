@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AFF Partner Hub BD - Official</title>
     <style>
-        /* পুরো পেজের ব্যাকগ্রাউন্ড হিসেবে ছবিটি সেট করা */
-        body {
+        /* CSS Reset */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* পুরো পেজের ব্যাকগ্রাউন্ড হিসেবে ছবিটি সেট করা */
+        body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #0d2137 url('banner.jpg') no-repeat center center fixed;
+            /* আপনার দেওয়া ব্যাকগ্রাউন্ড ছবির লিঙ্ক এখানে যুক্ত করা হয়েছে */
+            background: #0d2137 url('https://i.ibb.co.com/8LP6Y7V0/Banner.png') no-repeat center center fixed;
             background-size: cover;
             color: white;
             display: flex;
@@ -20,45 +26,56 @@
             text-align: center;
         }
 
-        /* কন্টেন্ট বক্সের স্টাইল */
+        /* কন্টেন্ট বক্সের স্টাইল (গ্লাস-মর্ফিজম ইফেক্ট) */
         .glass-box {
-            background: rgba(13, 33, 55, 0.85); /* নীলচে স্বচ্ছ ভাব */
-            padding: 40px;
+            background: rgba(13, 33, 55, 0.9); /* গভীর নীলচে স্বচ্ছ ভাব */
+            padding: 50px;
             border-radius: 20px;
             border: 1px solid rgba(255, 255, 255, 0.1);
-            max-width: 500px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+            max-width: 550px;
+            width: 90%; /* মোবাইল ফ্রেন্ডলি */
+            backdrop-filter: blur(5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
         }
 
-        h1 { font-size: 2.5rem; color: #ffcc00; margin-bottom: 10px; }
-        p { font-size: 1.1rem; line-height: 1.6; margin-bottom: 30px; }
+        /* লোগোর স্টাইল */
+        .logo {
+            max-width: 150px; /* লোগোর সাইজ */
+            margin-bottom: 25px;
+        }
+
+        h1 { font-size: 2.2rem; color: #ffcc00; margin-bottom: 15px; font-weight: bold; }
+        p { font-size: 1.1rem; line-height: 1.6; margin-bottom: 35px; color: #e0e0e0; }
 
         /* টেলিগ্রাম বাটনের স্টাইল */
         .btn-telegram {
             display: inline-block;
             background: #0088cc;
             color: white;
-            padding: 15px 35px;
+            padding: 16px 35px;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
             font-size: 1.2rem;
-            transition: 0.3s;
-            box-shadow: 0 4px 15px rgba(0, 136, 204, 0.4);
+            transition: 0.3s ease-in-out;
+            box-shadow: 0 5px 15px rgba(0, 136, 204, 0.4);
+            text-transform: uppercase;
         }
 
         .btn-telegram:hover {
             background: #00aaff;
             transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 136, 204, 0.6);
         }
     </style>
 </head>
 <body>
 
     <div class="glass-box">
+        <img src="https://i.ibb.co.com/YztqrBm/Logo.png" alt="AFF Partner Hub Logo" class="logo">
+        
         <h1>AFF Partner Hub BD</h1>
-        <p>বাংলাদেশের সবথেকে বিশ্বস্ত স্পোর্টস নেটওয়ার্ক পার্টনার প্রোগ্রামে আপনাকে স্বাগতম। সাব-এজেন্ট ক্যারিয়ার এবং স্পেশাল অফার পেতে আমাদের অফিসিয়াল কমিউনিটিতে যোগ দিন।</p>
+        <p>বাংলাদেশের সবথেকে বিশ্বস্ত স্পোর্টস নেটওয়ার্ক পার্টনার প্রোগ্রামে আপনাকে স্বাগতম। সাব-এজেন্ট ক্যারিয়ার গড়তে এবং স্পেশাল অফার পেতে আমাদের অফিসিয়াল কমিউনিটিতে যোগ দিন।</p>
         
         <a href=https://t.me/subagent011 class="btn-telegram">Join Our Telegram</a>
     </div>
